@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ImageRegulatorViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)jumpToImageRegulator:(UIButton *)sender {
+    ImageRegulatorViewController *vc = [[ImageRegulatorViewController alloc] init];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:navc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
