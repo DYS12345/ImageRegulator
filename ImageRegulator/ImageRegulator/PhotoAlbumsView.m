@@ -9,6 +9,8 @@
 #import "PhotoAlbumsView.h"
 #import "Helper.h"
 #import "PhotoAlbumsTableViewCell.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "PhotoModel.h"
 
 @interface PhotoAlbumsView () <UITableViewDelegate, UITableViewDataSource>
 
@@ -95,7 +97,7 @@
     
     [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if (result) {
-            FBPhoto * photo = [[FBPhoto alloc] init];
+            PhotoModel * photo = [[PhotoModel alloc] init];
             photo.asset = result;
             [marr addObject:photo];
         }
@@ -109,9 +111,13 @@
     
     if (self.photosMarr.count) {
         //  默认加载第一张照片
-        FBPhoto * firstPhoto = [self.photosMarr objectAtIndex:0];
+        PhotoModel * firstPhoto = [self.photosMarr objectAtIndex:0];
         self.showImageView.image = firstPhoto.originalImage;
     }
+}
+    
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"photoAlbums" object:nil];
 }
 
 
