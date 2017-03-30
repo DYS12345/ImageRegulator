@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVMediaFormat.h>
 #import "CameraView.h"
+#import "FBFootView.h"
 
 @interface ImageRegulatorViewController ()
     
