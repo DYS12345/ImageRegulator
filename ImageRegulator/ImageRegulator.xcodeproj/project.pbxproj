@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F513D9B11E8CB486003C414F /* FBFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = F513D9B01E8CB486003C414F /* FBFootView.m */; };
 		F5FE8BE01E8B532A009DAA0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BDF1E8B532A009DAA0C /* main.m */; };
 		F5FE8BE31E8B532A009DAA0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE21E8B532A009DAA0C /* AppDelegate.m */; };
 		F5FE8BE61E8B532A009DAA0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE51E8B532A009DAA0C /* ViewController.m */; };
@@ -24,8 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F513D9AF1E8CB486003C414F /* FBFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFootView.h; sourceTree = "<group>"; };
-		F513D9B01E8CB486003C414F /* FBFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFootView.m; sourceTree = "<group>"; };
 		F5FE8BDB1E8B532A009DAA0C /* ImageRegulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRegulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FE8BDF1E8B532A009DAA0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5FE8BE11E8B532A009DAA0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,8 +123,6 @@
 				F5FE8C041E8B9400009DAA0C /* PhotoAlbumsTableViewCell.m */,
 				F5FE8C0C1E8BC308009DAA0C /* CameraView.h */,
 				F5FE8C0D1E8BC308009DAA0C /* CameraView.m */,
-				F513D9AF1E8CB486003C414F /* FBFootView.h */,
-				F513D9B01E8CB486003C414F /* FBFootView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -213,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F513D9B11E8CB486003C414F /* FBFootView.m in Sources */,
 				F5FE8BF81E8B5459009DAA0C /* ImageRegulatorViewController.m in Sources */,
 				F5FE8C021E8B6657009DAA0C /* PhotoAlbumsView.m in Sources */,
 				F5FE8C0B1E8BA2C5009DAA0C /* PhotoModel.m in Sources */,
@@ -379,7 +373,6 @@
 				F5FE8BF41E8B532A009DAA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
