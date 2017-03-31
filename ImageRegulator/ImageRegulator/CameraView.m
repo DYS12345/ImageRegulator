@@ -98,11 +98,11 @@
                                                        if (photoStatus == ALAuthorizationStatusRestricted || photoStatus == ALAuthorizationStatusDenied) {
                                                            
                                                        } else {
-                                                           UIImage * image = [UIImage imageWithData:photoData];
-                                                           UIImage * photo = [self cropImage:image withCropSize:CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH)];
-                                                           SceneAddViewController * sceneAddVC = [[SceneAddViewController alloc] init];
-                                                           sceneAddVC.filtersImg = photo;
-                                                           [self.Nav pushViewController:sceneAddVC animated:YES];
+//                                                           UIImage * image = [UIImage imageWithData:photoData];
+//                                                           UIImage * photo = [self cropImage:image withCropSize:CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH)];
+//                                                           SceneAddViewController * sceneAddVC = [[SceneAddViewController alloc] init];
+//                                                           sceneAddVC.filtersImg = photo;
+//                                                           [self.Nav pushViewController:sceneAddVC animated:YES];
                                                        }
                                                        
                                                    }];

@@ -105,7 +105,8 @@
     
     //  相片倒序排列
     NSEnumerator * enumerator = [marr reverseObjectEnumerator];
-    while (id photoObj = [enumerator nextObject]) {
+    id photoObj = [enumerator nextObject];
+    while (photoObj) {
         [self.photosMarr addObject:photoObj];
     }
     

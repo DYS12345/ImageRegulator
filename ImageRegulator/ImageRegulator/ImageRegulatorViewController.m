@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVMediaFormat.h>
 #import "CameraView.h"
+#import "FBFootView.h"
 
 @interface ImageRegulatorViewController ()
     
@@ -22,6 +23,8 @@
 @property(nonatomic,strong) UIButton *nextBtn;
 @property(nonatomic,strong) UIView *pictureView;
 @property(nonatomic,strong) CameraView *cameraView;
+@property(nonatomic,strong) NSMutableArray *sortPhotosArr;      //  排序的相片
+@property(nonatomic,strong) UIButton *openPhotoAlbums;  //  打开相薄
     
 @end
 
@@ -88,12 +91,12 @@
     
 #pragma mark - 点击“继续”
 - (void)nextButtonClick:(UIButton *)button {
-    SceneAddViewController *addVC = [[SceneAddViewController alloc] init];
-    addVC.filtersImg = self.clipImageView.capture;
-    addVC.actionId = self.actionId;
-    addVC.activeTitle = self.activeTitle;
-    addVC.domainId = self.domainId;
-    [self.navigationController pushViewController:addVC animated:YES];
+//    SceneAddViewController *addVC = [[SceneAddViewController alloc] init];
+//    addVC.filtersImg = self.clipImageView.capture;
+//    addVC.actionId = self.actionId;
+//    addVC.activeTitle = self.activeTitle;
+//    addVC.domainId = self.domainId;
+//    [self.navigationController pushViewController:addVC animated:YES];
 }
     
 #pragma mark - 继续下一步的执行事件
@@ -126,6 +129,14 @@
         }];
     }
 }
+
+#pragma mark - init
+- (NSMutableArray *)sortPhotosArr {
+    if (!_sortPhotosArr) {
+        _sortPhotosArr = [NSMutableArray array];
+    }
+    return _sortPhotosArr;
+}
     
 #pragma mark - 加载相薄页面
 - (PhotoAlbumsView *)photoAlbumsView {
@@ -139,6 +150,20 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeViewTitle:) name:@"PhotoAlbumsName" object:nil];
     }
     return _photoAlbumsView;
+}
+
+#pragma mark - 打开相薄
+- (UIButton *)openPhotoAlbums {
+    if (!_openPhotoAlbums) {
+        _openPhotoAlbums = [[UIButton alloc] initWithFrame:CGRectMake(50, 0, SCREEN_WIDTH - 100, 45)];
+        [_openPhotoAlbums setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+        [_openPhotoAlbums setImage:[UIImage imageNamed:@"icon_down"] forState:(UIControlStateNormal)];
+        [_openPhotoAlbums setImage:[UIImage imageNamed:@"icon_upward"] forState:(UIControlStateSelected)];
+        _openPhotoAlbums.titleLabel.font = [UIFont systemFontOfSize:17];
+        _openPhotoAlbums.selected = NO;
+        _openPhotoAlbums.clipsToBounds = YES;
+    }
+    return _openPhotoAlbums;
 }
     
 - (void)changeViewTitle:(NSNotification *)title {

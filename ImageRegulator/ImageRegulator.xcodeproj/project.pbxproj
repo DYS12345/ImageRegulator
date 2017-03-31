@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F513D9B51E8E5526003C414F /* SceneAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F513D9B41E8E5526003C414F /* SceneAddViewController.m */; };
 		F5FE8BE01E8B532A009DAA0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BDF1E8B532A009DAA0C /* main.m */; };
 		F5FE8BE31E8B532A009DAA0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE21E8B532A009DAA0C /* AppDelegate.m */; };
 		F5FE8BE61E8B532A009DAA0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE51E8B532A009DAA0C /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F513D9B31E8E5526003C414F /* SceneAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneAddViewController.h; sourceTree = "<group>"; };
+		F513D9B41E8E5526003C414F /* SceneAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneAddViewController.m; sourceTree = "<group>"; };
 		F5FE8BDB1E8B532A009DAA0C /* ImageRegulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRegulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FE8BDF1E8B532A009DAA0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5FE8BE11E8B532A009DAA0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +62,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F513D9B21E8E5501003C414F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE8BF61E8B5459009DAA0C /* ImageRegulatorViewController.h */,
+				F5FE8BF71E8B5459009DAA0C /* ImageRegulatorViewController.m */,
+				F513D9B31E8E5526003C414F /* SceneAddViewController.h */,
+				F513D9B41E8E5526003C414F /* SceneAddViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		F5FE8BD21E8B532A009DAA0C = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +120,9 @@
 		F5FE8BF51E8B5426009DAA0C /* ImageRegulator */ = {
 			isa = PBXGroup;
 			children = (
+				F513D9B21E8E5501003C414F /* Controller */,
 				F5FE8C081E8BA2A9009DAA0C /* Model */,
 				F5FE8BFF1E8B6638009DAA0C /* View */,
-				F5FE8BF61E8B5459009DAA0C /* ImageRegulatorViewController.h */,
-				F5FE8BF71E8B5459009DAA0C /* ImageRegulatorViewController.m */,
 			);
 			name = ImageRegulator;
 			sourceTree = "<group>";
@@ -211,6 +224,7 @@
 				F5FE8BF81E8B5459009DAA0C /* ImageRegulatorViewController.m in Sources */,
 				F5FE8C021E8B6657009DAA0C /* PhotoAlbumsView.m in Sources */,
 				F5FE8C0B1E8BA2C5009DAA0C /* PhotoModel.m in Sources */,
+				F513D9B51E8E5526003C414F /* SceneAddViewController.m in Sources */,
 				F5FE8C051E8B9400009DAA0C /* PhotoAlbumsTableViewCell.m in Sources */,
 				F5FE8BE61E8B532A009DAA0C /* ViewController.m in Sources */,
 				F5FE8BE31E8B532A009DAA0C /* AppDelegate.m in Sources */,
@@ -373,6 +387,7 @@
 				F5FE8BF41E8B532A009DAA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
