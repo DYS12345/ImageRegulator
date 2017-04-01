@@ -13,6 +13,8 @@
 #import <AVFoundation/AVMediaFormat.h>
 #import "CameraView.h"
 #import "FBFootView.h"
+#import "Masonry/Masonry/Masonry.h"
+#import "UIColor+Extension.h"
 
 @interface ImageRegulatorViewController ()
     
@@ -25,6 +27,7 @@
 @property(nonatomic,strong) CameraView *cameraView;
 @property(nonatomic,strong) NSMutableArray *sortPhotosArr;      //  排序的相片
 @property(nonatomic,strong) UIButton *openPhotoAlbums;  //  打开相薄
+@property(nonatomic,strong) FBFootView *footView;  //  底部功能选择视图
     
 @end
 
@@ -242,7 +245,7 @@
         _footView = [[FBFootView alloc] init];
         _footView.backgroundColor = [UIColor colorWithHexString:@"#222222"];
         _footView.titleArr = arr;
-        _footView.titleFontSize = Font_ControllerTitle;
+        _footView.titleFontSize = 17;
         _footView.btnBgColor = [UIColor colorWithHexString:@"#222222"];
         _footView.titleNormalColor = [UIColor whiteColor];
         _footView.titleSeletedColor = [UIColor colorWithHexString:fineixColor alpha:1];

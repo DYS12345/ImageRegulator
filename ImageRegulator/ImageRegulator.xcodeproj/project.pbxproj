@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F513D9B51E8E5526003C414F /* SceneAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F513D9B41E8E5526003C414F /* SceneAddViewController.m */; };
+		F513D9BB1E8F9F3F003C414F /* FBFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = F513D9BA1E8F9F3F003C414F /* FBFootView.m */; };
+		F513D9BE1E8FA4FF003C414F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F513D9BD1E8FA4FF003C414F /* UIColor+Extension.m */; };
 		F5FE8BE01E8B532A009DAA0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BDF1E8B532A009DAA0C /* main.m */; };
 		F5FE8BE31E8B532A009DAA0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE21E8B532A009DAA0C /* AppDelegate.m */; };
 		F5FE8BE61E8B532A009DAA0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE8BE51E8B532A009DAA0C /* ViewController.m */; };
@@ -26,6 +28,10 @@
 /* Begin PBXFileReference section */
 		F513D9B31E8E5526003C414F /* SceneAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneAddViewController.h; sourceTree = "<group>"; };
 		F513D9B41E8E5526003C414F /* SceneAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneAddViewController.m; sourceTree = "<group>"; };
+		F513D9B91E8F9F3F003C414F /* FBFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFootView.h; sourceTree = "<group>"; };
+		F513D9BA1E8F9F3F003C414F /* FBFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFootView.m; sourceTree = "<group>"; };
+		F513D9BC1E8FA4FF003C414F /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F513D9BD1E8FA4FF003C414F /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		F5FE8BDB1E8B532A009DAA0C /* ImageRegulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRegulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FE8BDF1E8B532A009DAA0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5FE8BE11E8B532A009DAA0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		F5FE8BDD1E8B532A009DAA0C /* ImageRegulator */ = {
 			isa = PBXGroup;
 			children = (
+				F513D9BC1E8FA4FF003C414F /* UIColor+Extension.h */,
+				F513D9BD1E8FA4FF003C414F /* UIColor+Extension.m */,
 				F5FE8C061E8B9639009DAA0C /* Masonry */,
 				F5FE8BFC1E8B5BCA009DAA0C /* Helper.h */,
 				F5FE8BFD1E8B5BCA009DAA0C /* Helper.m */,
@@ -136,6 +144,8 @@
 				F5FE8C041E8B9400009DAA0C /* PhotoAlbumsTableViewCell.m */,
 				F5FE8C0C1E8BC308009DAA0C /* CameraView.h */,
 				F5FE8C0D1E8BC308009DAA0C /* CameraView.m */,
+				F513D9B91E8F9F3F003C414F /* FBFootView.h */,
+				F513D9BA1E8F9F3F003C414F /* FBFootView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -228,8 +238,10 @@
 				F5FE8C051E8B9400009DAA0C /* PhotoAlbumsTableViewCell.m in Sources */,
 				F5FE8BE61E8B532A009DAA0C /* ViewController.m in Sources */,
 				F5FE8BE31E8B532A009DAA0C /* AppDelegate.m in Sources */,
+				F513D9BE1E8FA4FF003C414F /* UIColor+Extension.m in Sources */,
 				F5FE8BE01E8B532A009DAA0C /* main.m in Sources */,
 				F5FE8BFE1E8B5BCA009DAA0C /* Helper.m in Sources */,
+				F513D9BB1E8F9F3F003C414F /* FBFootView.m in Sources */,
 				F5FE8C0E1E8BC308009DAA0C /* CameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
